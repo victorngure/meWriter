@@ -1,15 +1,8 @@
 <?php
-$environment=$_SERVER['SERVER_NAME'];
-$server="localhost";
-$base_url="";
-if($environment=="localhost"){
+  $server="localhost";
   $user="root";
-  $password="";
+  $password="Sydney123";
   $database="meWriter";  
-  $base_url=$environment."/".$database;
-
-}
-
 $connection=mysqli_connect($server,$user,$password,$database) or die("NO server and database");
 
 
